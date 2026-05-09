@@ -3,6 +3,14 @@
 # dependencies
 node_modules/
 
+# Next.js landing
+landing/.next/
+landing/out/
+landing/.vercel/
+landing/.turbo/
+landing/.env
+landing/.env.*
+
 # Expo
 .expo/
 dist/
