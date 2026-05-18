@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import type { ButtonHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes, MouseEventHandler } from 'react';
 import { cn } from '@/lib/cn';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -39,8 +39,10 @@ export function Button({
   const classes = cn(base, variants[variant], sizes[size], className);
 
   if (href) {
+    const anchorClick = onClick as MouseEventHandler<HTMLAnchorElement> | undefined;
+
     return (
-      <Link href={href} className={classes} onClick={onClick}>
+      <Link href={href} className={classes} onClick={anchorClick}>
         {children}
       </Link>
     );
