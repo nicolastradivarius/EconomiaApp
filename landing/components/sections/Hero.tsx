@@ -4,6 +4,7 @@ import Container from '@/components/ui/Container';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { brand, stats } from '@/content/landing';
+import { trackEvent } from '@/lib/analytics';
 import { ArrowUpRight, Headphones, Sparkles } from 'lucide-react';
 
 const chips = [
@@ -13,6 +14,8 @@ const chips = [
 ];
 
 export default function Hero() {
+  const ctaLabel = brand.micro.includes('Beta') ? 'Unirme a la lista' : 'Lista de espera';
+
   return (
     <section id="producto" className="relative overflow-hidden pt-32">
       <div className="absolute inset-0">
@@ -33,8 +36,18 @@ export default function Hero() {
             {brand.subtitle}
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button href="#cta" size="lg">
-              {brand.micro.includes('Beta') ? 'Unirme a la lista' : 'Lista de espera'}
+            <Button
+              href="#cta"
+              size="lg"
+              onClick={() =>
+                trackEvent('waitlist_click', {
+                  label: ctaLabel,
+                  location: 'hero',
+                  href: '#cta',
+                })
+              }
+            >
+              {ctaLabel}
             </Button>
             <Button href="#demo" variant="outline" size="lg">
               Ver demo

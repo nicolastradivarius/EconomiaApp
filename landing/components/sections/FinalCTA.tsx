@@ -3,6 +3,7 @@
 import Container from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { cta } from '@/content/landing';
+import { trackEvent } from '@/lib/analytics';
 
 export default function FinalCTA() {
   return (
@@ -15,7 +16,17 @@ export default function FinalCTA() {
               {cta.title}
             </h2>
             <p className="text-base text-muted md:text-lg">{cta.description}</p>
-            <Button size="lg">{cta.button}</Button>
+            <Button
+              size="lg"
+              onClick={() =>
+                trackEvent('waitlist_click', {
+                  label: cta.button,
+                  location: 'cta_final',
+                })
+              }
+            >
+              {cta.button}
+            </Button>
             <p className="text-xs uppercase tracking-[0.3em] text-muted">
               Beta privada - cupos limitados
             </p>

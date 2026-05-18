@@ -3,6 +3,7 @@
 import Container from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { brand, navLinks } from '@/content/landing';
+import { trackEvent } from '@/lib/analytics';
 import { Radio } from 'lucide-react';
 
 export default function Navbar() {
@@ -30,7 +31,17 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <Button href="#cta" size="sm">
+            <Button
+              href="#cta"
+              size="sm"
+              onClick={() =>
+                trackEvent('waitlist_click', {
+                  label: 'Lista de espera',
+                  location: 'navbar',
+                  href: '#cta',
+                })
+              }
+            >
               Lista de espera
             </Button>
           </div>
