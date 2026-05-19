@@ -41,18 +41,10 @@ export function Button({
   if (href) {
     const anchorClick = onClick as MouseEventHandler<HTMLAnchorElement> | undefined;
 
-    if (href.startsWith('#')) {
-      return (
-        <a href={href} className={classes} onClick={anchorClick}>
-          {children}
-        </a>
-      );
-    }
-
-    return (
-      <Link href={href} className={classes} onClick={anchorClick}>
-        {children}
-      </Link>
+	 return (
+		<a href={href} className={classes} onClick={anchorClick}>
+			{children}
+		</a>
     );
   }
 
