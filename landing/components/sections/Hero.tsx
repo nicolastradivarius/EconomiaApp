@@ -49,7 +49,16 @@ export default function Hero() {
             >
               {ctaLabel}
             </Button>
-            <Button href="#demo" variant="outline" size="lg">
+            <Button 
+              href="#demo" 
+              variant="outline" 
+              size="lg"
+              onClick={() =>
+                trackEvent('demo_click', {
+                  location: 'hero',
+                })
+              }
+            >
               Ver demo
             </Button>
           </div>

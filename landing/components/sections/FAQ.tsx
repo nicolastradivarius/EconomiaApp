@@ -5,6 +5,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { faqs } from '@/content/landing';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { trackEvent } from '@/lib/analytics';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -27,9 +28,13 @@ export default function FAQ() {
               >
                 <button
                   className="flex w-full items-center justify-between px-5 py-4 text-left text-sm font-semibold text-text"
-                  onClick={() =>
-                    setOpenIndex(isOpen ? null : index)
-                  }
+                  onClick={() => {
+                    const isOpening = !isOpen;
+                    setOpenIndex(isOpening ? index : null);
+                    if (isOpening) {
+                      trackEvent('faq_toggle', { question: faq.question });
+                    }
+                  }}
                 >
                   {faq.question}
                   <ChevronDown className="h-4 w-4" />
