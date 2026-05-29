@@ -10,9 +10,9 @@ export default function SocialProof() {
       <Container>
         <div className="grid items-end gap-6 md:grid-cols-[1.1fr_0.9fr]">
           <SectionHeader
-            label="Momentum"
-            title="La energia social ya esta en marcha"
-            description="Un vistazo a la actividad que estamos viendo en la beta privada."
+            label="Traccion"
+            title="La actividad en beta cerrada ya esta en marcha"
+            description="Un vistazo a la energia que vemos en las primeras salas."
           />
           <p className="text-muted">
             Creamos una experiencia donde la musica se siente compartida y el

@@ -12,7 +12,7 @@ export default function ChatPreview() {
           <SectionHeader
             label="Chat"
             title="Conversaciones que se sienten en vivo"
-            description="Roles visibles, respuestas rapidas y mensajes que no se pierden."
+            description="Roles visibles, respuestas rapidas y moderacion simple."
           />
         </div>
         <div className="glass rounded-3xl border border-white/10 p-6">

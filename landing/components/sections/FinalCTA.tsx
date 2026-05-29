@@ -48,7 +48,7 @@ export default function FinalCTA() {
             </h2>
             <p className="text-base text-muted md:text-lg">
               {status === 'success' 
-                ? 'Te estaremos avisando por correo cuando tu acceso esté listo.' 
+                ? 'Te vamos a avisar por correo cuando el acceso este listo.' 
                 : cta.description}
             </p>
             
@@ -60,7 +60,7 @@ export default function FinalCTA() {
                 <input
                   type="email"
                   required
-                  placeholder="Tu mejor email..."
+                  placeholder="Email principal..."
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={status === 'loading'}

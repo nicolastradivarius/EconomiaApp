@@ -9,6 +9,7 @@ import Rooms from '@/components/sections/Rooms';
 import ChatPreview from '@/components/sections/ChatPreview';
 import PlayerPreview from '@/components/sections/PlayerPreview';
 import Testimonials from '@/components/sections/Testimonials';
+import Pricing from '@/components/sections/Pricing';
 import FAQ from '@/components/sections/FAQ';
 import FinalCTA from '@/components/sections/FinalCTA';
 import Footer from '@/components/sections/Footer';
@@ -28,6 +29,7 @@ export default function HomePage() {
         <ChatPreview />
         <PlayerPreview />
         <Testimonials />
+        <Pricing />
         <FAQ />
         <FinalCTA />
       </main>

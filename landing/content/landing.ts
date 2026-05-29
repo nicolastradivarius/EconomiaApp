@@ -1,20 +1,21 @@
 export const brand = {
   name: 'Wavechat',
-  tagline: 'Tu musica, sincronizada con tu gente',
+  tagline: 'Salas de musica sincronizada con chat en vivo',
   subtitle:
-    'Crea salas, escucha al mismo tiempo y conversa como si estuvieran en la misma habitacion.',
-  micro: 'Disponible en iOS y Android - Beta privada en junio',
+    'Crea salas con roles visibles, musica sincronizada y chat en vivo sin delay. Entra, escucha y conversa como si estuvieran juntos.',
+  micro: 'Beta privada - cupos limitados. iOS y Android en camino.',
 };
 
 export const navLinks = [
   { label: 'Producto', href: '#producto' },
   { label: 'Salas', href: '#salas' },
   { label: 'Chat', href: '#chat' },
+  { label: 'Planes', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
 ];
 
 export const stats = [
-  { label: 'Personas en lista de espera', value: '2.8k' },
+  { label: 'En lista de espera', value: '2.8k' },
   { label: 'Salas activas por dia', value: '38' },
   { label: 'Promedio por sesion', value: '42 min' },
   { label: 'Mensajes por sala', value: '120+' },
@@ -22,23 +23,23 @@ export const stats = [
 
 export const features = [
   {
-    title: 'Escucha sincronizada',
-    description: 'Todos escuchan el mismo track sin desfase ni cortes.',
+    title: 'Sincronizacion real',
+    description: 'Musica alineada para todos, sin desfase ni cortes.',
     icon: 'wave',
   },
   {
-    title: 'Chat en tiempo real',
-    description: 'Roles visibles, reacciones y respuestas instantaneas.',
+    title: 'Chat en vivo',
+    description: 'Roles claros, moderacion y reacciones al instante.',
     icon: 'chat',
   },
   {
-    title: 'Playlists compartidas',
-    description: 'La sala decide el orden. El host modera.',
+    title: 'Playlist colaborativa',
+    description: 'La sala propone y el host decide el orden.',
     icon: 'playlist',
   },
   {
     title: 'Mini reproductor persistente',
-    description: 'Nunca pierdes el ritmo mientras exploras.',
+    description: 'Segui explorando sin cortar la sala.',
     icon: 'player',
   },
 ];
@@ -51,8 +52,8 @@ export const howItWorks = [
   },
   {
     step: '02',
-    title: 'Conecta tu ritmo',
-    description: 'La musica se sincroniza en segundos para todos.',
+    title: 'Sincroniza la musica',
+    description: 'La reproduccion se alinea en segundos, sin delay.',
   },
   {
     step: '03',
@@ -93,7 +94,7 @@ export const chatMessages = [
     role: 'host',
   },
   {
-    user: 'You',
+    user: 'Vos',
     text: 'Esta transicion esta perfecta.',
     time: '10:02',
     role: 'self',
@@ -116,12 +117,12 @@ export const testimonials = [
   {
     name: 'Camila R.',
     role: 'Product Designer',
-    quote: 'Se siente como escuchar con amigos en vivo.',
+    quote: 'Se siente como estar en la misma sala.',
   },
   {
     name: 'Nico M.',
     role: 'Music Curator',
-    quote: 'La energia del chat hace que la sala cobre vida.',
+    quote: 'La energia del chat hace que todo cobre vida.',
   },
   {
     name: 'Vale P.',
@@ -130,14 +131,97 @@ export const testimonials = [
   },
 ];
 
+export const pricingPlans = [
+  {
+    name: 'Free',
+    price: '$0',
+    suffix: 'USD/mes',
+    description: 'Entrar a salas, chat y discovery.',
+    features: [
+      'Entrar a salas publicas',
+      'Chat en vivo',
+      'Discovery y busqueda',
+    ],
+    cta: 'Empezar gratis',
+  },
+  {
+    name: 'Plus',
+    price: '$3-7',
+    suffix: 'USD/mes',
+    description: 'Para escuchar sin limites y guardar sesiones.',
+    features: [
+      'Sin ads',
+      'Boosts de sala',
+      'Guardar salas y recaps',
+      'Calidad alta',
+    ],
+    cta: 'Sumarte a Plus',
+  },
+  {
+    name: 'Creator/Host',
+    price: '$9-19',
+    suffix: 'USD/mes',
+    description: 'Herramientas para hosts con comunidad.',
+    features: [
+      'Moderacion avanzada',
+      'Salas privadas y co-hosts',
+      'Cola prioritaria',
+      'Analiticas de sala',
+    ],
+    cta: 'Ser host',
+    tag: 'Recomendado',
+    featured: true,
+  },
+  {
+    name: 'Teams/Brands',
+    price: '$49-199',
+    suffix: 'USD/mes',
+    description: 'Experiencias de marca con soporte.',
+    features: [
+      'Salas patrocinadas',
+      'Branding y assets',
+      'Reportes e insights',
+      'Soporte dedicado',
+    ],
+    cta: 'Hablar con ventas',
+  },
+];
+
+export const partnerProgram = {
+  title: 'Programa partner para hosts',
+  description:
+    'Si la sala crece, podes entrar al programa partner. Pagamos un pool mensual segun el aporte y metricas de calidad.',
+  perks: [
+    'Pool mensual + bonos por crecimiento',
+    'Soporte prioritario',
+    'Acceso anticipado a features',
+  ],
+  metrics: [
+    'Minutos de escucha',
+    'Retencion de sala',
+    'Nuevos oyentes',
+    'Engagement del chat',
+    'Frecuencia de hosts',
+  ],
+};
+
 export const faqs = [
   {
     question: 'Necesito Spotify para usarlo?',
-    answer: 'No. La sala reproduce desde el host y sincroniza a todos.',
+    answer:
+      'No necesitas abrir Spotify. La sala reproduce desde el host con fuentes autorizadas.',
+  },
+  {
+    question: 'Puedo silenciar o bloquear usuarios?',
+    answer: 'Si, los hosts tienen herramientas basicas de moderacion y reportes.',
+  },
+  {
+    question: 'Cuanta data consume?',
+    answer: 'Depende de la fuente y la calidad, pero optimizamos para sesiones largas.',
   },
   {
     question: 'Las salas pueden ser privadas?',
-    answer: 'Si, puedes crear salas publicas o privadas con invitacion.',
+    answer: 'Si, podes crear salas publicas o privadas con invitacion.',
   },
   {
     question: 'Habra version web?',
@@ -146,14 +230,15 @@ export const faqs = [
 ];
 
 export const cta = {
-  title: 'Se parte del primer release',
-  description: 'Acceso anticipado para quienes se sumen hoy.',
-  button: 'Reservar mi lugar',
+  title: 'Sumate al primer release',
+  description: 'Acceso anticipado para quienes se anoten hoy.',
+  button: 'Quiero acceso',
 };
 
 export const footerLinks = [
   { label: 'Producto', href: '#producto' },
   { label: 'Comunidad', href: '#chat' },
+  { label: 'Planes', href: '#pricing' },
   { label: 'Privacidad', href: '#faq' },
   { label: 'Contacto', href: 'mailto:hello@wavechat.app' },
 ];

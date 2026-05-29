@@ -43,7 +43,7 @@ export default function PlayerPreview() {
           <SectionHeader
             label="Player"
             title="Mini reproductor persistente"
-            description="La sala sigue viva mientras exploras y descubres nuevas conversaciones."
+            description="La sala sigue viva mientras exploras nuevas conversaciones."
           />
         </div>
       </Container>

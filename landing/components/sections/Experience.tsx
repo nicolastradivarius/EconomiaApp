@@ -6,7 +6,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 const highlights = [
   'Entradas rapidas con un solo tap.',
-  'Hosts visibles y liderazgo claro.',
+  'Roles claros y moderacion ligera.',
   'Salas con energia y ritmo constante.',
   'Mini player siempre presente.',
 ];
@@ -18,7 +18,7 @@ export default function Experience() {
         <div>
           <SectionHeader
             label="Experiencia social"
-            title="No es solo streaming. Es estar ahi."
+            title="No es solo streaming. Es estar juntos."
             description="Cada sala combina musica, comunidad y descubrimiento en tiempo real."
           />
           <div className="grid gap-3">

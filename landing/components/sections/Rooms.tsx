@@ -12,7 +12,7 @@ export default function Rooms() {
         <SectionHeader
           label="Salas destacadas"
           title="Explora espacios con identidad propia"
-          description="Cada sala tiene un host, una energia y una playlist en vivo."
+          description="Cada sala tiene un host, una energia y una playlist viva."
         />
         <div className="grid gap-6 md:grid-cols-3">
           {rooms.map((room) => (

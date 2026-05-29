@@ -11,7 +11,7 @@ export default function Testimonials() {
         <SectionHeader
           label="Voces"
           title="Lo que dicen los primeros testers"
-          description="Feedback real de personas que ya pasaron por la beta privada."
+          description="Feedback real de personas que ya pasaron por la beta cerrada."
           align="center"
         />
         <div className="grid gap-6 md:grid-cols-3">

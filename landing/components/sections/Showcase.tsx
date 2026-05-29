@@ -80,7 +80,7 @@ export default function Showcase() {
                   HOST · DJ Luna
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-muted">
-                  You: Este drop esta brutal
+                  Vos: Este drop esta brutal
                 </div>
               </div>
             </div>

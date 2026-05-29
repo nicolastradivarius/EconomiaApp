@@ -10,7 +10,7 @@ export default function HowItWorks() {
       <Container>
         <SectionHeader
           label="Flujo"
-          title="Tres pasos y ya estas dentro"
+          title="Tres pasos y estas dentro"
           description="Pensado para entrar rapido, sin configuraciones raras."
         />
         <div className="grid gap-6 md:grid-cols-3">

@@ -23,8 +23,8 @@ export default function Features() {
       <Container>
         <SectionHeader
           label="Funciones"
-          title="Todo lo que hace que una sala se sienta real"
-          description="Diseñado para que la musica y la conversacion se muevan juntas."
+          title="Lo que hace real a cada sala"
+          description="Disenado para que la musica y la conversacion se muevan juntas."
         />
         <div className="grid gap-6 md:grid-cols-2">
           {features.map((feature) => {

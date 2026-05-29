@@ -8,9 +8,9 @@ import { trackEvent } from '@/lib/analytics';
 import { ArrowUpRight, Headphones, Sparkles } from 'lucide-react';
 
 const chips = [
-  { label: 'Salas en vivo', icon: Headphones },
-  { label: 'Chat sincronizado', icon: Sparkles },
-  { label: 'Playlist colectiva', icon: ArrowUpRight },
+  { label: 'Sincronizacion real', icon: Headphones },
+  { label: 'Roles claros', icon: Sparkles },
+  { label: 'Playlists colaborativas', icon: ArrowUpRight },
 ];
 
 export default function Hero() {
